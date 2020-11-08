@@ -15,6 +15,13 @@ phoneRegex =re.compile(r'''(
 
 #TODO: Create Email Regix
 
+emailRegex = re.compile(r'''(
+  [a-zA-Z0-9._%+-]+ #Username
+   @ #Symbol
+  [a-zA-Z0-9.-]+ #Domain name
+  (\.[a-zA-Z]{2,4}) #Dot somehing
+  )''', re.VERBOSE)
+
 
 #TODOL Find matches in clipboard text
 
